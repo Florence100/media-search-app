@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchResultItem from '../searchResultItem/SearchResultItem';
 import './searchResults.css';
 
 interface SearchResult {
@@ -15,12 +16,8 @@ interface SearchResultsProps {
 const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
     return (
         <div>
-            {results.map((result: SearchResult) => (
-                <div key={result.trackId}>
-                    <div>{result.trackId}</div>
-                    <img src={result.artworkUrl60} alt={result.trackName} />
-                    <p>{result.trackName} by {result.artistName}</p>
-                </div>
+            {results.map((result, index) => ( 
+                <SearchResultItem key={index} result={result} /> 
             ))}
         </div>
     );
