@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import SearchBar from './components/searchBar/SearchBar';
 import SearchResults from './components/searchResults/SearchResults';
 import { searchMedia } from './api/searchMedia';
@@ -19,9 +19,9 @@ const App: React.FC = () => {
         fetchData();
     }, [query]);
 
-    const handleSearch = (newQuery: string) => {
-        setQuery(newQuery);
-    };
+    const handleSearch = useCallback((newQuery: string) => { 
+        setQuery(newQuery); 
+    }, []);
 
     return (
         <div>
