@@ -1,13 +1,7 @@
 import React from 'react';
 import SearchResultItem from '../searchResultItem/SearchResultItem';
+import { SearchResult } from '../../types/SearchResult';
 import './searchResults.css';
-
-interface SearchResult {
-    trackId: number;
-    trackName: string;
-    artistName: string;
-    artworkUrl60: string;
-}
 
 interface SearchResultsProps {
     results: SearchResult[];

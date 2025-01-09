@@ -1,12 +1,8 @@
 import React from 'react';
+import { SearchResult } from '../../types/SearchResult';
 
 interface SearchResultItemProps {
-    result: {
-        trackId: number;
-        trackName: string;
-        artistName: string;
-        artworkUrl60: string;
-    };
+    result: SearchResult;
 }
 
 const SearchResultItem: React.FC<SearchResultItemProps> = ({ result }) => {
