@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, CardBody, Image, CardFooter, Link, CardHeader } from "@nextui-org/react";
 import { SearchResult } from '../../types/SearchResult';
-import './searchResultItem.css';
 
 interface SearchResultItemProps {
     result: SearchResult;
