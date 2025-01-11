@@ -7,7 +7,7 @@ module.exports = {
     // ...
     // make sure it's pointing to the ROOT node_module
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{html,js}"
+    "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
     extend: {},
@@ -18,11 +18,6 @@ module.exports = {
       addCommonColors: true,
       layout: {
         disabledOpacity: 0.6,
-        radius: {
-          small: "8px",
-          medium: "12px",
-          large: "14px",
-        },
         borderWidth: {
           small: "1px",
           medium: "1px",
