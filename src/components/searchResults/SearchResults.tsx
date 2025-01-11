@@ -9,7 +9,7 @@ interface SearchResultsProps {
 
 const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
     return (
-        <div>
+        <div className="search-results">
             {results.map((result, index) => ( 
                 <SearchResultItem key={index} result={result} /> 
             ))}

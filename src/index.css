@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* $breakpoint_small: 576px;
+$breakpoint_medium: 768px;
+$breakpoint_large: 1200px;
+$breakpoint_xlarge: 1400px; */
+
+/* 640 пикселей	Для небольших устройств (мобильных).
+768 пикселей	Для средних устройств (планшетов).
+1024px	Для больших устройств (ноутбуков).
+1280 пикселей	Для очень больших устройств (настольных компьютеров).
+1536 пикселей */

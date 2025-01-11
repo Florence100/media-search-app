@@ -49,9 +49,13 @@ const App: React.FC = () => {
     }, []);
 
     return (
-        <div>
-            <SearchBar onSearch={handleSearch} />
-            <SearchResults results={results} />
+        <div className="app-container">
+            <div className="search-bar-container">
+                <SearchBar onSearch={handleSearch} />
+            </div>
+            <div className="search-results-container">
+                <SearchResults results={results} />
+            </div>
         </div>
     );
 };

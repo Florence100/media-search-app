@@ -1,1 +1,31 @@
+.app-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.search-bar-container {
+    width: 25%;
+}
+
+.search-results-container {
+    width: 75%;
+}
+
+@media (max-width: 1280px) {
+    .app-container {
+        flex-direction: column;
+    }
+
+    .search-bar-container {
+        width: 100%;
+    }
+    
+    .search-results-container {
+        width: 100%;
+    }
+}
 
